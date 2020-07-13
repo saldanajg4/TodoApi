@@ -29,6 +29,13 @@ namespace TodoApi
         {
             services.AddDbContext<TodoContext>(opt =>
                opt.UseInMemoryDatabase("TodoList"));
+
+
+      //      services.AddDbContext<TodoContext>(options =>
+      //options.UseSqlServer(Configuration.GetConnectionString("TodoContextString")));
+
+
+
             services.AddControllers();
         }
 
